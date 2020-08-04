@@ -4,21 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo Relogio</title>
+    <title>Calculadora de idade</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
     <header>
-        <h1>Bien Venido</h1>
+        <h1>Verificador de idade</h1>
     </header>
     <section>
+
         <div>
-            Teste
+            <p>
+                Ano de nascimento
+                <input type="number" name="txtano" id="txtano" >
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="radsex" id="femi" value="femi" checked>
+                <label for="femi">Feminino</label>
+                <input type="radio" name="radsex" id="masc" value="masc">
+                <label for="masc">Masculino</label>
+            </p>
+            <p>
+                <input type="button" value="Calcular" onclick="verificar()">
+            </p>
         </div>
-        <div>
-            Ola
+        <div id="res">
+            Preencha os dados por favor
         </div>
+
     </section>
     <footer>
         <p>&copy;Test'one</p>
