@@ -1,10 +1,10 @@
-
+//Obtem Hora atual 
 setInterval(function () {
     var date = new Date()
     var hora = date.getHours()
     var minutos = date.getMinutes()
     var segundos = date.getSeconds()
-
+//Organiza os segundos
     if (segundos < 10) {
         segundos = "0" + segundos
     }
@@ -13,7 +13,7 @@ setInterval(function () {
     getSegundos = document.getElementById('segundos').textContent = segundos + ' Segundos'
 
 }, 10)
-
+//Dispara com o botão "Salvar", confirma o horario agendado
 function alerta_salvar() {
     alert("Alerta Criado")
     let horaDesp = document.getElementById('hora22').value
@@ -21,7 +21,7 @@ function alerta_salvar() {
     //var resultado = document.getElementById('resultado')
     resultado.innerHTML =  `Agendado para as ${horaDesp}:${minutoDesp}` 
 
-
+//Função verificador alerta !ERRO!
     setInterval(function desp() {
         
 
