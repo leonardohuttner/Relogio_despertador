@@ -10,18 +10,37 @@
 
 <body>
     <header>
-        <h1>Bien Venido</h1>
+        <h1>Brasilia,DF</h1>
     </header>
-    <section>
-        <div>
-            Teste
+    <section id="relogio">
+
+        <div id="hora">
+            00  Hora
         </div>
-        <div>
-            Ola
+
+        <div id="minutos">
+             00 Minutos 
+        </div>
+
+        <div id="segundos">
+            00 Segundos 
+        </div>
+
+        <div id="desp">
+            <h3>Enviar alerta em:</h3>
+            <p>
+                <input type="text" name="horaDesp" id="hora_Desp">
+                <label for="horaDesp">Hora</label>
+
+                <input type="text" name="minutoDesp" id="hora_Desp">
+                <label for="hora">Min</label>
+
+                <input type="button" name="Salvar" onclick="desp()" value="Salvar">
+            </p>
         </div>
     </section>
     <footer>
-        <p>&copy;Test'one</p>
+        <p>&copy;Huttner</p>
     </footer>
     <script src="script.js"></script>
 </body>

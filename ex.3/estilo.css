@@ -15,8 +15,25 @@ padding: 15px ;
 width: 500px;
 margin: auto;
 box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.404);
+text-align: center;
 
 }
+div#hora{
+color: blue;
+text-align: center;
+font-size: 50pt;
+}
+div#minutos{
+    color: red;
+    text-align: center;
+    font-size: 50pt;
+}
+div#segundos{
+    color: yellow;
+    text-align: center;
+    font-size: 30pt;
+}
+
 footer{
     text-align: center;
     color: white;
