@@ -18,29 +18,35 @@ function atualiza_hora() {
 }
 
 function visor_hora() {
-    hora = document.getElementById('hora').textContent = hora + 'H'
-    minutos = document.getElementById('minutos').textContent = minutos + ' M'
-    segundos = document.getElementById('segundos').textContent = segundos + ' Segundos'
+    hora = document.getElementById('hora').textContent = hora 
+    minutos = document.getElementById('minutos').textContent = minutos 
+    segundos = document.getElementById('segundos').textContent = segundos 
 }
 
 function btt_salvar() {
     alert("Alerta Criado")
     horaDesp = document.getElementById('horaDesp').value
     minutoDesp = document.getElementById('minutoDesp').value
-
     resultado.innerHTML = `Agendado para ${horaDesp}:${minutoDesp}`
     despertador(horaDesp, minutoDesp)
 }
 
 function despertador(horaDesp, minutoDesp) {
     console.log("Chamei a função despertador")
-    setInterval(function alerta_despertador() {
-        console.log("Chamei a função despertador 2")
-        if (horaDesp == hora && minutoDesp == minutos && segundos) {
-            console.log("sua hora chegou")
-            window.alert('Acorda!')
-        }
-    }, 10);
+   despertador_teste = setInterval(alerta_despertador, 1000);
 
 }
 
+function alerta_despertador() {
+    console.log( minutoDesp == minutos)
+    if (minutoDesp == minutos) {
+
+        console.log("Chamei a função despertador 2")
+        window.alert('Acorda!')
+        som = document.getElementById("som")
+        som.play()
+        resultado.innerHTML = 'Sucess'
+        clearInterval(despertador_teste)
+
+    }
+}
